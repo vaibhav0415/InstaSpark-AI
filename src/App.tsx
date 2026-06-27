@@ -295,28 +295,36 @@ Rules:
 
   const inputStyle: React.CSSProperties = {
     width: "100%",
-    backgroundColor: "#0d0d1a",
-    border: "1px solid #333",
-    color: "#fff",
-    padding: "10px 12px",
-    fontSize: 13,
+    backgroundColor: "#0f172a",
+    border: "1px solid #334155",
+    color: "#e2e8f0",
+    padding: "14px 16px",
+    fontSize: 15,
+    lineHeight: 1.4,
+    borderRadius: 12,
     fontFamily: "inherit",
     outline: "none",
     boxSizing: "border-box",
   };
 
   const labelStyle: React.CSSProperties = {
-    color: "#aaa",
-    fontSize: 10,
+    color: "#94a3b8",
+    fontSize: 11,
     fontWeight: 700,
-    letterSpacing: 2,
+    letterSpacing: 2.2,
     display: "block",
-    marginBottom: 6,
+    marginBottom: 8,
     textTransform: "uppercase",
   };
 
   return (
-    <div style={{ minHeight: "100vh", backgroundColor: "#f5f5f0", fontFamily: "'Inter', system-ui, sans-serif" }}>
+    <div style={{
+      minHeight: "100vh",
+      backgroundColor: "#f5f5f0",
+      backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.12) 0.75px, rgba(245,245,240,0) 0.75px)",
+      backgroundSize: "24px 24px",
+      fontFamily: "'Inter', system-ui, sans-serif",
+    }}>
 
       {copyToast && (
         <div style={{
@@ -330,33 +338,42 @@ Rules:
       )}
 
       <header style={{
-        backgroundColor: "#FFE000", borderBottom: "3px solid #000",
-        padding: "0 32px", height: 56,
-        display: "flex", alignItems: "center", justifyContent: "space-between",
+        position: "fixed",
+        width: "100%",
+        top: 0,
+        left: 0,
+        zIndex: 100,
+        backgroundColor: "#FFE000",
+        borderBottom: "3px solid #000",
+        padding: "0 32px",
+        height: 56,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <div style={{ width: 36, height: 36, backgroundColor: "#000", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <span style={{ color: "#FFE000", fontSize: 18, fontWeight: 900 }}>⚡</span>
           </div>
           <div>
-            <div style={{ fontWeight: 900, fontSize: 15, letterSpacing: 2, textTransform: "uppercase" }}>INSTASPARK AI</div>
+            <div style={{ fontWeight: 900, fontSize: 15, letterSpacing: 2, textTransform: "uppercase" }}>BrandSpark AI</div>
             <div style={{ fontSize: 10, letterSpacing: 2, color: "#333", textTransform: "uppercase" }}>PROFESSIONAL CONTENT SUITE</div>
           </div>
         </div>
-        <div style={{ border: "2px solid #000", padding: "4px 14px", fontSize: 11, fontWeight: 700, letterSpacing: 2, display: "flex", alignItems: "center", gap: 6, backgroundColor: "#fff" }}>
+        <div style={{ border: "2px solid #000", padding: "4px 14px", fontSize: 11, fontWeight: 700, letterSpacing: 2, display: "flex", alignItems: "center", gap: 6, backgroundColor: "#000" }}>
           <span style={{ width: 7, height: 7, borderRadius: "50%", backgroundColor: "#00cc66", display: "inline-block" }} />
-          API CONNECTED
+          <span style={{ color: "#00ff88" }}>API CONNECTED</span>
         </div>
       </header>
 
-      <div style={{ padding: "48px 32px 32px", maxWidth: 1200, margin: "0 auto" }}>
-        <div style={{ display: "inline-flex", alignItems: "center", gap: 8, border: "2px solid #000", padding: "4px 12px", marginBottom: 20, fontSize: 11, fontWeight: 700, letterSpacing: 2, backgroundColor: "#fff" }}>
+      <div style={{ padding: "96px 32px 32px", maxWidth: 1200, margin: "0 auto" }}>
+        <div style={{ display: "inline-flex", alignItems: "center", gap: 8, border: "1px solid #334155", padding: "6px 14px", marginBottom: 20, fontSize: 11, fontWeight: 700, letterSpacing: 2, backgroundColor: "#0f172a", color: "#e2e8f0", borderRadius: 12 }}>
           ✦ CREATIVE BRUTALISM V1.0
         </div>
         <h1 style={{ fontSize: "clamp(28px, 4vw, 52px)", fontWeight: 900, lineHeight: 1.05, letterSpacing: -1, textTransform: "uppercase", color: "#000", marginBottom: 16 }}>
           GO VIRAL WITH SMARTER<br />SOCIAL MEDIA PLANNING
         </h1>
-        <p style={{ fontSize: 15, color: "#0000cc", maxWidth: 520, lineHeight: 1.6, marginBottom: 40 }}>
+        <p style={{ fontSize: 15, color: "#172554", maxWidth: 520, lineHeight: 1.6, marginBottom: 40 }}>
           Keep your core brand identity safe in state. Generate professional multi-format content blueprints, target optimal audience timings, and sort highly contextual hashtag banks instantly.
         </p>
 
@@ -368,10 +385,10 @@ Rules:
             {/* Panel 0 */}
             <div style={{ backgroundColor: "#1a1a2e", border: "2px solid #000", padding: 24, boxShadow: "4px 4px 0 #000" }}>
               <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
-                <div style={{ width: 32, height: 32, backgroundColor: "#2a2a4e", border: "1px solid #444", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14 }}>🔍</div>
+                <div style={{ width: 32, height: 32, backgroundColor: "#0f172a", border: "1px solid #334155", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14 }}>🔍</div>
                 <div>
                   <div style={{ color: "#FFE000", fontWeight: 800, fontSize: 13, letterSpacing: 2 }}>0. WEBSITE / ABOUT SCAN</div>
-                  <div style={{ color: "#888", fontSize: 10, letterSpacing: 1 }}>PRE-POPULATES THE BRAND PROFILE</div>
+                  <div style={{ color: "#94a3b8", fontSize: 10, letterSpacing: 1 }}>PRE-POPULATES THE BRAND PROFILE</div>
                 </div>
               </div>
               <label style={labelStyle}>WEBSITE URL OR BRAND DESCRIPTION</label>
@@ -494,7 +511,7 @@ Rules:
           </div>
 
           {/* RIGHT COLUMN */}
-          <div style={{ backgroundColor: "#1a1a2e", border: "2px solid #000", boxShadow: "4px 4px 0 #000", minHeight: 600 }}>
+          <div style={{ backgroundColor: "#0f172a", border: "1px solid #334155", borderRadius: 18, boxShadow: "4px 4px 0 #000", minHeight: 600 }}>
             <div style={{ borderBottom: "2px solid #333", padding: "0 16px", display: "flex", alignItems: "center" }}>
               <div style={{ marginRight: 12, padding: "14px 0", minWidth: 80 }}>
                 <div style={{ color: "#FFE000", fontSize: 9, fontWeight: 700, letterSpacing: 1.5, lineHeight: 1.6 }}>⚡ LIVE DYNAMIC<br />WORKSPACE</div>
@@ -516,8 +533,8 @@ Rules:
                 ideas.length === 0 ? (
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: 400, gap: 16 }}>
                     <div style={{ fontSize: 48, opacity: 0.2 }}>💡</div>
-                    <div style={{ color: "#fff", fontWeight: 700, fontSize: 15 }}>No Content Generated Yet</div>
-                    <div style={{ color: "#0077cc", fontSize: 13, textAlign: "center", maxWidth: 300, lineHeight: 1.6 }}>Fill out your Brand Profile on the left and hit generate to construct high-engagement concepts instantly.</div>
+                    <div style={{ color: "#e2e8f0", fontWeight: 700, fontSize: 15 }}>No Content Generated Yet</div>
+                    <div style={{ color: "#94a3b8", fontSize: 13, textAlign: "center", maxWidth: 320, lineHeight: 1.6 }}>Fill out your Brand Profile on the left and hit generate to construct high-engagement concepts instantly.</div>
                   </div>
                 ) : (
                   <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
@@ -626,7 +643,7 @@ Rules:
         </div>
 
         <div style={{ borderTop: "2px solid #000", marginTop: 48, paddingTop: 20, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
-          <span style={{ fontSize: 11, color: "#666" }}>© 2026 INSTASPARK AI. CRAFTED FOR MAXIMUM SOCIAL MEDIA LEVERAGE.</span>
+          <span style={{ fontSize: 11, color: "#666" }}>© 2026 BrandSpark AI. CRAFTED FOR MAXIMUM SOCIAL MEDIA LEVERAGE.</span>
           <span style={{ fontSize: 11, color: "#0077cc" }}>⚡ Fully Responsive · Client-Side · Sandbox Ready</span>
         </div>
       </div>
